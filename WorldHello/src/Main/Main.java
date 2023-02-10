@@ -14,13 +14,19 @@ public class Main {
 		Player p = new Player(name, level);
 		menu(p);
 	}
+	
+	public void hud(Player p, area a) {
+		
+	}
+	
 	public static void menu(Player p) {
 		sc=new Scanner(System.in);
+		System.out.println("-=Welcome to the Crossroads=-");
 		System.out.println("1. Go to the village");
 		System.out.println("2. Go to the forest");
 		System.out.println("3. Go to the castle");
 		System.out.println("4. Go to the dungeon");
-		System.out.println("5. Quit the game");
+		System.out.println("q. Quit the game");
 		int choice = sc.nextInt();
 		switch(choice) {
 		case 1:
