@@ -1,16 +1,32 @@
 package WorldHello.pojo;
 
 public class Player {
-	public Player(String name, String class1, int level, int str, int dex, int con, int wpr, int imt, int hp, int mp) {
+	String Name;
+	String charClass;
+	String charRace;
+	String password;
+	int Level;
+	int str;
+	int dex;
+	int con;
+	int wpr;
+	int intel;
+	int hp;
+	int mp;
+	
+
+	public Player(String name, String password, String class1, String race, int level, int str, int dex, int con, int wpr, int intel, int hp, int mp) {
 		super();
-		Name = name;
-		charClass = class1;
-		Level = level;
+		this.Name = name;
+		this.password = password;
+		this.charClass = class1;
+		this.charRace = race;
+		this.Level = level;
 		this.str = str;
 		this.dex = dex;
 		this.con = con;
 		this.wpr = wpr;
-		this.imt = imt;
+		this.intel = intel;
 		this.hp = hp;
 		this.mp = mp;
 	}
@@ -57,11 +73,11 @@ public class Player {
 	public void setWpr(int wpr) {
 		this.wpr = wpr;
 	}
-	public int getImt() {
-		return imt;
+	public int getintel() {
+		return intel;
 	}
-	public void setImt(int imt) {
-		this.imt = imt;
+	public void setintel(int intel) {
+		this.intel = intel;
 	}
 	public int getHp() {
 		return hp;
@@ -75,15 +91,16 @@ public class Player {
 	public void setMp(int mp) {
 		this.mp = mp;
 	}
-	String Name;
-	String charClass;
-	int Level;
-	int str;
-	int dex;
-	int con;
-	int wpr;
-	int imt;
-	int hp;
-	int mp;
-	
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getCharRace() {
+		return charRace;
+	}
+	public void setCharRace(String charRace) {
+		this.charRace = charRace;
+	}	
 }

@@ -31,17 +31,29 @@ public class Monster {
 	public void setMpGrowth(double mpGrowth) {
 		this.mpgrowth = mpGrowth;
 	}
-	public int getAtk() {
-		return atk;
+	public int getBaseAtk() {
+		return baseatk;
 	}
-	public void setAtk(int atk) {
-		this.atk = atk;
+	public void setBaseAtk(int baseAtk) {
+		this.baseatk = baseAtk;
 	}
-	public int getDef() {
-		return def;
+	public int getBaseDef() {
+		return basedef;
 	}
-	public void setDef(int def) {
-		this.def = def;
+	public void setBaseDef(int baseDef) {
+		this.basedef = baseDef;
+	}
+	public double getAtkGrowth() {
+		return atkgrowth;
+	}
+	public void setAtkGrowth(double atkGrowth) {
+		this.atkgrowth = atkGrowth;
+	}
+	public double getDefGrowth() {
+		return defgrowth;
+	}
+	public void setDefGrowth(double defGrowth) {
+		this.defgrowth = defGrowth;
 	}
 	public int getMlvl() {
 		return mlvl;
@@ -60,19 +72,23 @@ public class Monster {
 	public double hpgrowth;
 	public int basemp;
 	public double mpgrowth;
-	public int atk;
-	public int def;
+	public int baseatk;
+	public int basedef;
+	public double atkgrowth;
+	public double defgrowth;
 	public int mlvl;
 	public Loot[] loot;
-	public Monster(String name, int basehp, double hpGrowth, int basemp, double mpGrowth, int atk, int def, int mlvl, Loot[] loot) {
+	public Monster(String name, int basehp, double hpGrowth, int basemp, double mpGrowth, int baseatk, double atkGrowth, int basedef, double defGrowth, int mlvl, Loot[] loot) {
 		super();
 		this.name = name;
 		this.basehp = basehp;
 		this.hpgrowth = hpGrowth;
 		this.basemp = basemp;
 		this.mpgrowth = mpGrowth;
-		this.atk = atk;
-		this.def = def;
+		this.baseatk = baseatk;
+		this.basedef = basedef;
+		this.atkgrowth = atkGrowth;
+		this.defgrowth = defGrowth;
 		this.mlvl = mlvl;
 		this.loot = loot;
 	}
